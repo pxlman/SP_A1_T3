@@ -1,0 +1,13 @@
+# Problem 4
+1. Take the input from the user and check it contains at least one alphabatic and then it will encrypt only the alpha chars in the input
+2. Take the input of the shift value and check it's valid numeric from 1 to 25
+3. Declare an empty string value called newTxt
+4. Do a loop for each char in the inserted txt and check if the char is alpha then it will shift it and add it to the newTxt else it will add it as it is.
+5. For each char to be shifted, it will check at first if it's lowercase or uppercase, and add this to a boolean isLower
+6. It shifts the char as it's lowercase using modulos, and if it's isLower was False it will return the upper of this char, else it will return this char
+7. After shifting each char we add it to the newTxt the print it to the user
+
+# Problem 6
+1. Infinite loop to take the +ve number from the user and if it's valid +ve the loop will break
+2. Make a list of factors where it starts with one and ends with the number
+3. A loop will check that the number is divisable by an integar from 2 to 1/2 of the number, and if it is, this number will be add to the list between 1 and the number

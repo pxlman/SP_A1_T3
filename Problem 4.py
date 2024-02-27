@@ -13,20 +13,20 @@ def encrypt(ch,val):
     return alphas[newOrd].upper()
 
 def problem4():
-  while True:
+  valid = False
+  while not valid:
     txt = input("Please insert the text to encrypt(Only alphabatic and spaces are encrypted): ")
     for i in txt:
       if i.isalpha():
-        break
-
+        valid = True
   while True:
     shift = input("Please insert a shift value from 1 to 25: ")
     if shift.isnumeric():
       shift = int(shift)
-        if shift <= 25 and shift >= 1:
-          break
-        else:
-          continue
+      if shift <= 25 and shift >= 1:
+        break
+      else:
+        continue
 
 
   newTxt = ""

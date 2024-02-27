@@ -14,7 +14,7 @@ print("""
 """)
 coins = "j"
 while True:
-    coins = input("Number of coins to start playing with (Normal is 13)")
+    coins = input("Number of coins to start playing with (Normal is 13): ")
     if coins.isnumeric():
         if int(coins) > 1:
             break
